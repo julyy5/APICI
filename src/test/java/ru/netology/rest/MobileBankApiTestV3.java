@@ -14,7 +14,7 @@ class MobileBankApiTestV3 {
         // Given - When - Then
         // Предусловия
         given()
-                .baseUri("http://localhost:9999/api/v1/demo/accounts")
+                .baseUri("http://localhost:9999/api/v1")
                 // Выполняемые действия
                 .when()
                 .get("/demo/accounts")
