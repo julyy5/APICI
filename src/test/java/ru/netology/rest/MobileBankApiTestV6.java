@@ -12,13 +12,13 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 
 class MobileBankApiTestV6 {
     private RequestSpecification requestSpec = new RequestSpecBuilder()
-        .setBaseUri("http://localhost:9999/api/v1")
-        .setBasePath("/demo/accounts")
-        .setPort(9999)
-        .setAccept(ContentType.JSON)
-        .setContentType(ContentType.JSON)
-        .log(LogDetail.ALL)
-        .build();
+            .setBaseUri("http://localhost")
+            .setBasePath("/api/v1")
+            .setPort(9999)
+            .setAccept(ContentType.JSON)
+            .setContentType(ContentType.JSON)
+            .log(LogDetail.ALL)
+            .build();
 
     @Test
     void shouldReturnDemoAccounts() {
